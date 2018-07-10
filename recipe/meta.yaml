@@ -1,6 +1,6 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.4.62" %}
-{% set sha256 = "715185cacba0b40e5c1949fb6e8c2b050cda8008ccf3e6e618f4c7da86147e7f" %}
+{% set version = "1.4.84" %}
+{% set sha256 = "95b78f91b0e263248ac10c303278b934c3533ea01cbba6d99202fbf4a5e21dfb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
- number: 1
+ number: 0
  skip: True  # [win]
 
 requirements:
@@ -41,8 +41,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'C++ library that makes it easy to integrate C++ applications with AWS services'
-
+  summary: C++ library that makes it easy to integrate C++ applications with AWS services
   description: |
     The AWS SDK for C++ provides a modern C++ (version C++ 11 or later) interface for Amazon Web Services (AWS).
     It is meant to be performant and fully functioning with low- and high-level SDKs,
