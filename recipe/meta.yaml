@@ -1,6 +1,6 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.5.15" %}
-{% set sha256 = "564370ee44134b1a0c087d6e7bdff11a4fc26d0957181197ff9d50c8987b9818" %}
+{% set version = "1.5.18" %}
+{% set sha256 = "994d08758af4f2d3d35adce59d4115517b4e2efff0830095960f9478ebd46de9" %}
 
 package:
   name: {{ name|lower }}
