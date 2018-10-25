@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
- number: 0
+ number: 1
  skip: True  # [win32]
  skip: true  # [win and py<35]
  features:
@@ -21,15 +21,14 @@ build:
 requirements:
   build:
     - cmake
-    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python # [win and py>=35]
+    - python  # [win and py>=35]
     - curl
     - openssl
     - zlib
   run:
-    - python # [win and py>=35]
+    - python  # [win and py>=35]
     - curl
     - openssl
     - zlib

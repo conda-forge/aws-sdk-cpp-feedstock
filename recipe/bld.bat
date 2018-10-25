@@ -1,3 +1,5 @@
+setlocal EnableDelayedExpansion
+
 mkdir "%SRC_DIR%"\build
 pushd "%SRC_DIR%"\build
 
@@ -7,7 +9,9 @@ cmake -G "%CMAKE_GENERATOR%" ^
       -DENABLE_TESTING:BOOL=ON ^
       -DCMAKE_BUILD_TYPE=Release ^
       ..
+if errorlevel 1 exit 1
 
 cmake --build . --target INSTALL --config Release
+if errorlevel 1 exit 1
 
 popd
