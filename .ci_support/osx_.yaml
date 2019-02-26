@@ -10,6 +10,8 @@ curl:
 - '7.64'
 cxx_compiler:
 - clangxx
+libcurl:
+- '7.64'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
@@ -18,6 +20,8 @@ openssl:
 - 1.1.1a
 pin_run_as_build:
   curl:
+    max_pin: x
+  libcurl:
     max_pin: x
   openssl:
     max_pin: x.x.x
