@@ -22,10 +22,12 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - curl
+    - libcurl
     - openssl
     - zlib
   run:
     - curl
+    - libcurl
     - openssl
     - zlib
 
