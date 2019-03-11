@@ -10,5 +10,6 @@ cmake \
   -DBUILD_ONLY='s3;core;transfer;config' \
   -DENABLE_TESTING=ON \
   -DCMAKE_BUILD_TYPE=Release ..
-make -j${CPU_COUNT}
+
+make -j${CPU_COUNT} VERBOSE=1
 make install
