@@ -1,6 +1,7 @@
 #!/bin/sh
 mkdir build && cd build
 cmake \
+  -DCMAKE_PREFIX_PATH="${PREFIX}" \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DCURL_LIBRARY=${PREFIX}/lib/libcurl${SHLIB_EXT} \
