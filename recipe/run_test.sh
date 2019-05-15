@@ -2,6 +2,7 @@
 
 # Stop on first error
 set -e
+set -x
 
 if [ "$(uname)" == "Darwin" ]; then
     # OSX
