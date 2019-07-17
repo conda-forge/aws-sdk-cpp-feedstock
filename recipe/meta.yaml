@@ -1,6 +1,6 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.7.100" %}
-{% set sha256 = "d502d5b93eaeed574dc4af27c9af69498a0ffcd5435e961b60df1986319c8a11" %}
+{% set version = "1.7.143" %}
+{% set sha256 = "cbba6e58b9258880e84a955a02a81072e7652edef64e5ed33c817a7e4ba405f2" %}
 
 package:
   name: {{ name|lower }}
@@ -20,6 +20,7 @@ requirements:
     - cmake >=3.2
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - ninja
   host:
     - curl
     - openssl
@@ -32,6 +33,9 @@ requirements:
 test:
   files:
     - test.cpp
+    - CMakeLists.txt
+  requires:
+    - cmake
   commands:
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
