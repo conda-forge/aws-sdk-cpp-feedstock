@@ -36,6 +36,8 @@ test:
     - CMakeLists.txt
   requires:
     - cmake
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   commands:
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
