@@ -153,4 +153,5 @@ Feedstock Maintainers
 =====================
 
 * [@jakebolewski](https://github.com/jakebolewski/)
-
+* [@pitrou](https://github.com/pitrou/)
+* [@ihnorton](https://github.com/ihnorton/)
