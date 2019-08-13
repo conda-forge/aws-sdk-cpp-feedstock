@@ -14,3 +14,11 @@ cmake .. -GNinja \
 
 ninja
 ninja install
+
+# Ensure that /lib64 is not created or populated
+LIB64=${PREFIX}/lib64
+if [ -d "${LIB64}" ]; then
+    echo "Error: lib64 exists!"
+    ls -lA ${LIB64}
+    exit 1
+fi

@@ -10,9 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
+    - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
   features:  # [win]
     - vc14  # [win]
