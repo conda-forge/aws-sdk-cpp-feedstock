@@ -1,6 +1,6 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.7.160" %}
-{% set sha256 = "42093dd53f7465cf1b4f7507e748b00e41d1ce8ae110fdcca32c18df4a14bea1" %}
+{% set version = "1.7.164" %}
+{% set sha256 = "314bcf75e43ad808058693d0b0cb2278535333a17be7a3feb4c33d9c1af2924d" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
     - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win and vc<14]
   features:  # [win]
     - vc14  # [win]
