@@ -26,6 +26,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - ninja
+    - make  # [unix]
   host:
     - curl
     - openssl
@@ -44,6 +45,7 @@ test:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - ninja
+    - make  # [unix]
   commands:
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
