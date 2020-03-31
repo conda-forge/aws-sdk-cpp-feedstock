@@ -15,7 +15,7 @@ source:
     - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
   features:  # [win]
     - vc14  # [win]
