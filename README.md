@@ -49,7 +49,7 @@ Current build status
               <td>linux</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2757&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aws-sdk-cpp-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aws-sdk-cpp-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
                 </a>
               </td>
             </tr><tr>
