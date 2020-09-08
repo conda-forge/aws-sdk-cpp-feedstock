@@ -4,7 +4,7 @@ set -e
 
 mkdir build && cd build
 
-cmake .. -GNinja \
+cmake ${CMAKE_ARGS} .. -GNinja \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DBUILD_ONLY='s3;core;transfer;config;identity-management;sts' \
