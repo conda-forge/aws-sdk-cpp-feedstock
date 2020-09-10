@@ -1,24 +1,21 @@
 {% set name = "aws-sdk-cpp" %}
 {% set version = "1.7.164" %}
-{% set sha256 = "314bcf75e43ad808058693d0b0cb2278535333a17be7a3feb4c33d9c1af2924d" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 314bcf75e43ad808058693d0b0cb2278535333a17be7a3feb4c33d9c1af2924d
   patches:
     # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
     - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
-  features:  # [win]
-    - vc14  # [win]
+  number: 3
+  run_exports:
+    - - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
 requirements:
   build:
@@ -28,13 +25,9 @@ requirements:
     - ninja
     - make  # [unix]
   host:
-    - curl
-    - openssl
-    - zlib
-  run:
-    - curl
-    - openssl
-    - zlib
+    - aws-c-common
+    - aws-c-event-stream
+    - libcurl
 
 test:
   files:
@@ -68,3 +61,4 @@ extra:
     - jakebolewski
     - pitrou
     - ihnorton
+    - xhochy
