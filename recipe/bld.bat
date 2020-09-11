@@ -8,8 +8,10 @@ cmake -LAH -G "Ninja" ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
       -DBUILD_ONLY="s3;core;transfer;config;identity-management;sts" ^
       -DENABLE_UNITY_BUILD=on ^
-      -DENABLE_TESTING=off ^
+      -DENABLE_TESTING=OFF ^
       -DCMAKE_BUILD_TYPE=Release ^
+      -DBUILD_DEPS=OFF ^
+      -DBUILD_SHARED_LIBS=ON ^
       ..
 if errorlevel 1 exit 1
 
