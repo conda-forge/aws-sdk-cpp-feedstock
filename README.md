@@ -190,4 +190,5 @@ Feedstock Maintainers
 * [@ihnorton](https://github.com/ihnorton/)
 * [@jakebolewski](https://github.com/jakebolewski/)
 * [@pitrou](https://github.com/pitrou/)
+* [@xhochy](https://github.com/xhochy/)
 
