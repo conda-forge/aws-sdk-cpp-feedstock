@@ -5,6 +5,6 @@ set -ex
 
 # Try compiling example using CMake
 mkdir build && cd build
-cmake ..
+cmake -DBUILD_SHARED_LIBS=ON ..
 make
 ./test-cmake
