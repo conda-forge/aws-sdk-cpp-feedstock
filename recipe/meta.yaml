@@ -25,7 +25,7 @@ requirements:
     - ninja
     - make  # [unix]
   host:
-    - aws-c-common >=0.4.57
+    - aws-c-common
     - aws-c-event-stream
     - libcurl
 

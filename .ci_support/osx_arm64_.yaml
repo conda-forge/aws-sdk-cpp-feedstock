@@ -1,5 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
+aws_c_common:
+- 0.4.57
+aws_c_event_stream:
+- 0.1.6
 c_compiler:
 - clang
 c_compiler_version:
