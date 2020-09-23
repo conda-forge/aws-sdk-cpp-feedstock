@@ -1,5 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
+- '10.12'
 aws_c_common:
 - 0.4.57
 aws_c_event_stream:
