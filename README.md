@@ -5,9 +5,13 @@ Home: https://github.com/aws/aws-sdk-cpp
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-sdk-cpp-feedstock/blob/master/LICENSE.txt)
 
 Summary: C++ library that makes it easy to integrate C++ applications with AWS services
+
+Development: https://github.com/aws/aws-sdk-cpp
+
+Documentation: https://aws.amazon.com/documentation/sdk-for-cpp/
 
 The AWS SDK for C++ provides a modern C++ (version C++ 11 or later) interface for Amazon Web Services (AWS).
 It is meant to be performant and fully functioning with low- and high-level SDKs,
