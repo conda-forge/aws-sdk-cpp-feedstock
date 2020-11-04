@@ -13,7 +13,7 @@ source:
     - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -28,9 +28,6 @@ requirements:
     - aws-c-common
     - aws-c-event-stream
     - libcurl
-  run_constrained:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
-
 
 test:
   files:
