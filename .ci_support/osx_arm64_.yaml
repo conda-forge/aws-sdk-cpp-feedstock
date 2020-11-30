@@ -3,13 +3,13 @@ MACOSX_DEPLOYMENT_TARGET:
 aws_c_common:
 - 0.4.59
 aws_c_event_stream:
-- 0.1.6
+- 0.2.5
 c_compiler:
 - clang
 c_compiler_version:
 - '11'
 channel_sources:
-- conda-forge/label/rust_dev,conda-forge,https://conda-web.anaconda.org/conda-forge
+- conda-forge/label/rust_dev,conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
