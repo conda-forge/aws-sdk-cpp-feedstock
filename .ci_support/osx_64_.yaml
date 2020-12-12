@@ -5,11 +5,11 @@ MACOSX_SDK_VERSION:
 aws_c_common:
 - 0.4.59
 aws_c_event_stream:
-- 0.1.6
+- 0.2.6
 c_compiler:
 - clang
 c_compiler_version:
-- '10'
+- '11'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -17,7 +17,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '10'
+- '11'
 libcurl:
 - '7'
 macos_machine:
