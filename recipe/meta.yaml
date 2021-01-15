@@ -16,6 +16,7 @@ build:
   number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
+    - __osx= >=10.13  # [osx]
 
 requirements:
   build:
