@@ -11,12 +11,12 @@ source:
   patches:
     # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
     - 0001-fix-libdir-for-deps.patch
+    - 0002-force-openssl-use.patch
 
 build:
   number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
-    - __osx= >=10.13  # [osx]
 
 requirements:
   build:
@@ -29,6 +29,10 @@ requirements:
     - aws-c-common
     - aws-c-event-stream
     - libcurl
+    # Force all platforms to use OpenSSL, rather than OS-supplied APIs.  Note
+    # that OpenSSL is implictly pulled in as a libcurl dependency, but we
+    # explicitly list it as a host requirement so our run_exports are correct.
+    - openssl
 
 test:
   files:

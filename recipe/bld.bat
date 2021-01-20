@@ -12,6 +12,9 @@ cmake -LAH -G "Ninja" ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DBUILD_DEPS=OFF ^
       -DBUILD_SHARED_LIBS=ON ^
+      -DFORCE_CURL=ON ^
+      -DCURL_HAS_H2=ON ^
+      -DCURL_HAS_TLS_PROXY=ON ^
       ..
 if errorlevel 1 exit 1
 
