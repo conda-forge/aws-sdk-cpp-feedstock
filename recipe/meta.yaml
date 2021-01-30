@@ -13,7 +13,7 @@ source:
     - 0001-fix-libdir-for-deps.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -28,6 +28,7 @@ requirements:
     - aws-c-common
     - aws-c-event-stream
     - libcurl
+    - openssl
 
 test:
   files:
