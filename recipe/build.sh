@@ -7,7 +7,7 @@ mkdir build && cd build
 cmake ${CMAKE_ARGS} .. -GNinja \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_INSTALL_LIBDIR=lib \
-  -DBUILD_ONLY='s3;core;transfer;config;identity-management;sts' \
+  -DBUILD_ONLY='s3;core;transfer;config;identity-management;sts;sqs;sns;monitoring;logs' \
   -DENABLE_UNITY_BUILD=ON \
   -DENABLE_TESTING=OFF \
   -DCMAKE_BUILD_TYPE=Release \
