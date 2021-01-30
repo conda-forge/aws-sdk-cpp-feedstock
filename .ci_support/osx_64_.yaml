@@ -22,9 +22,13 @@ libcurl:
 - '7'
 macos_machine:
 - x86_64-apple-darwin13.4.0
+openssl:
+- 1.1.1
 pin_run_as_build:
   libcurl:
     max_pin: x
+  openssl:
+    max_pin: x.x.x
 target_platform:
 - osx-64
 zip_keys:
