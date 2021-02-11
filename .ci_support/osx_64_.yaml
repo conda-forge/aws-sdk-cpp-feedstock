@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '10.12'
 aws_c_common:
-- 0.4.66
+- 0.4.67
 aws_c_event_stream:
 - 0.2.6
 c_compiler:
