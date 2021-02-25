@@ -1,5 +1,5 @@
 aws_c_common:
-- 0.4.67
+- 0.5.1
 aws_c_event_stream:
 - 0.2.6
 c_compiler:
