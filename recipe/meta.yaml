@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.8.163" %}
+{% set version = "1.8.164" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 11059f4dffb8594cd2f3e0a8ef074ccbe7902c51d882273e14022663e0db02e3
+  sha256: 4b393be730b3201f2127d89b83852797f5a3a1859a43a3c65ad2a705c0fa8aaf
   patches:
     # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
     - 0001-fix-libdir-for-deps.patch
