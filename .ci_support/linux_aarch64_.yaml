@@ -1,7 +1,7 @@
 BUILD:
 - aarch64-conda_cos7-linux-gnu
 aws_c_common:
-- 0.6.4
+- 0.6.5
 aws_c_event_stream:
 - 0.2.7
 c_compiler:
