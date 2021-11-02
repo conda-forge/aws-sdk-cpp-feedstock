@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.9.134" %}
+{% set version = "1.9.135" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 645ef0f4540341513bda5b7338ef9e68488567cbad44067c5882c4a0f35ec266
+  sha256: 1237d1b9674bfd709c36840d39a744e27c7d3f07d51e4050fd7c560e2a38e1b8
   patches:
     - 0001-Remove-Werror-from-compiler-flags.patch
 
