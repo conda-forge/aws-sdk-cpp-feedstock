@@ -1,0 +1,23 @@
+aws_c_common:
+- 0.6.17
+aws_c_event_stream:
+- 0.2.7
+aws_crt_cpp:
+- 0.17.9
+c_compiler:
+- vs2017
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2017
+libcurl:
+- '7'
+openssl:
+- '3'
+pin_run_as_build:
+  libcurl:
+    max_pin: x
+target_platform:
+- win-64
