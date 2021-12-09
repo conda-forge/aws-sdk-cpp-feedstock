@@ -12,7 +12,7 @@ source:
     - 0001-Remove-Werror-from-compiler-flags.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
