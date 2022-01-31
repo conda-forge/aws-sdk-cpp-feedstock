@@ -25,6 +25,9 @@ requirements:
     - {{ compiler('cxx') }}
     - ninja
     - make  # [unix]
+    - patch     # [not win]
+    - m2-patch  # [win]
+
   host:
     - aws-c-common
     - aws-c-event-stream
