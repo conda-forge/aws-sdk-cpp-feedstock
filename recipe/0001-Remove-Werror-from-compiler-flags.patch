@@ -1,6 +1,6 @@
-From 4914e893aa96e2e18b8806c0906db2dd7e7b8c75 Mon Sep 17 00:00:00 2001
-From: "Uwe L. Korn" <uwelk@xhochy.com>
-Date: Tue, 29 Jun 2021 10:38:39 +0200
+From 988fe2e757d9c27f6da5e984dee18f86992dcaf8 Mon Sep 17 00:00:00 2001
+From: "Uwe L. Korn" <uwe.korn@quantco.com>
+Date: Thu, 3 Mar 2022 20:36:01 +0100
 Subject: [PATCH] Remove Werror from compiler flags
 
 ---
@@ -8,17 +8,17 @@ Subject: [PATCH] Remove Werror from compiler flags
  1 file changed, 1 deletion(-)
 
 diff --git a/cmake/compiler_settings.cmake b/cmake/compiler_settings.cmake
-index 52c93ca..79cf22f 100644
+index 1fc3b073e..83b76b98f 100644
 --- a/cmake/compiler_settings.cmake
 +++ b/cmake/compiler_settings.cmake
 @@ -53,7 +53,6 @@ macro(set_gcc_flags)
  endmacro()
  
  macro(set_gcc_warnings)
--    list(APPEND AWS_COMPILER_WARNINGS "-Wall" "-Werror" "-pedantic" "-Wextra")
+-    list(APPEND AWS_COMPILER_WARNINGS "-Wall" "-Werror" "-pedantic" "-Wextra" "-Wshadow")
      if(COMPILER_CLANG)
          if(PLATFORM_ANDROID)
              # when using clang with libc and API lower than 21 we need to include Android support headers and ignore the gnu-include-next warning.
 -- 
-2.7.4
+2.35.0
 
