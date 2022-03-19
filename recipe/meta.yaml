@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 26fbbf3f63f5d7b3909ac204e3e57fe500a282ac7dd202da110bb4583773f209
-  patches:
-    - 0001-Remove-Werror-from-compiler-flags.patch
 
 build:
   number: 0

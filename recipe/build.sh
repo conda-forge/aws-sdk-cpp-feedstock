@@ -2,6 +2,10 @@
 
 set -e
 
+mv cmake/compiler_settings.cmake cmake/compiler_settings.cmake.orig
+# Remove setting Werror explicitly.
+grep -v Werror cmake/compiler_settings.cmake.orig > cmake/compiler_settings.cmake
+
 mkdir build && cd build
 
 cmake ${CMAKE_ARGS} .. -GNinja \
