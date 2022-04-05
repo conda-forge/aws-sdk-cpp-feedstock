@@ -3,7 +3,7 @@ aws_c_common:
 aws_c_event_stream:
 - 0.2.7
 aws_crt_cpp:
-- 0.17.21
+- 0.17.22
 c_compiler:
 - vs2017
 channel_sources:
