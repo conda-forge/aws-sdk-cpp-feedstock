@@ -9,7 +9,7 @@ aws_crt_cpp:
 c_compiler:
 - clang
 c_compiler_version:
-- '12'
+- '13'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -17,7 +17,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '12'
+- '13'
 libcurl:
 - '7'
 macos_machine:
