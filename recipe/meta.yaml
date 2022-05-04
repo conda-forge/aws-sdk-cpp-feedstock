@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.9.248" %}
+{% set version = "1.9.249" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: a72014148f83f40f05a947fe31caa9d7f800c92ae42fc1e19e7ed9287c1b13bf
+  sha256: 90f0cc578906748395025f8f99f8ff4f5262c91170644d1e2f16c28d4007df92
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
