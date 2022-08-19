@@ -27,6 +27,7 @@ requirements:
     - aws-crt-cpp
     - libcurl
     - openssl
+    - zlib
 
 test:
   files:
