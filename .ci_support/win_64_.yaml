@@ -5,13 +5,13 @@ aws_c_event_stream:
 aws_crt_cpp:
 - 0.18.2
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- vs2019
 libcurl:
 - '7'
 openssl:
