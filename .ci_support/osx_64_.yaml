@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 aws_c_common:
 - 0.8.0
 aws_c_event_stream:
-- 0.2.13
+- 0.2.14
 aws_crt_cpp:
 - 0.18.3
 c_compiler:
