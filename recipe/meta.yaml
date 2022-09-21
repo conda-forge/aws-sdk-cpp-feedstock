@@ -10,7 +10,7 @@ source:
   sha256: 1055e26c1b96f179d11216dc265d98f85fd68a7dd574a7e63ed7cf83c6595703
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
