@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 aws_c_common:
 - 0.8.1
 aws_c_event_stream:
-- 0.2.14
+- 0.2.15
 aws_crt_cpp:
 - 0.18.8
 c_compiler:
