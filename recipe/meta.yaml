@@ -29,6 +29,7 @@ requirements:
     - aws-c-event-stream
     - libcurl
     - openssl
+    - zlib
 
 test:
   files:
