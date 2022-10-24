@@ -13,6 +13,8 @@ source:
     - 0001-fix-libdir-for-deps.patch
 
 build:
+  # temporarily skip all builds to push new branch
+  skip: true
   number: 4
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
