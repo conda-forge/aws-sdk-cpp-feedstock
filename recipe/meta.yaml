@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.10.21" %}
+{% set version = "1.10.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 889cb92d676759c274f648b08b543f93692db92afcd7f1e14325da5141fc911c
+  sha256: 14a92d8c0cdfe71c8690d09ba4a1a8f1effaeff3284509d9eb4be547f39b8042
 
 build:
   number: 0
