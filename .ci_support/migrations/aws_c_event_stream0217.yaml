@@ -4,5 +4,5 @@ __migrator:
   migration_number: 1
   automerge: true
 aws_c_event_stream:
-- 0.2.16
-migrator_ts: 1671105886.9121041
+- 0.2.17
+migrator_ts: 1671265626.3377686
