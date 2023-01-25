@@ -250,7 +250,6 @@ Feedstock Maintainers
 
 * [@h-vetinari](https://github.com/h-vetinari/)
 * [@ihnorton](https://github.com/ihnorton/)
-* [@jakebolewski](https://github.com/jakebolewski/)
 * [@pitrou](https://github.com/pitrou/)
 * [@xhochy](https://github.com/xhochy/)
 
