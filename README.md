@@ -1,11 +1,11 @@
-About aws-sdk-cpp
-=================
+About aws-sdk-cpp-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-sdk-cpp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aws/aws-sdk-cpp
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-sdk-cpp-feedstock/blob/main/LICENSE.txt)
 
 Summary: C++ library that makes it easy to integrate C++ applications with AWS services
 
