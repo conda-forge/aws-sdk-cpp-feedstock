@@ -1,4 +1,4 @@
-{% set version = "1.11.30" %}
+{% set version = "1.11.31" %}
 
 package:
   name: aws-sdk-cpp
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/aws/aws-sdk-cpp/archive/{{ version }}.tar.gz
-  sha256: fedfa6284abc0b7a8b4e3a5abdaeb3a9253f1ee9c0cbdeda1f0eebe682e2064b
+  sha256: 4ebdfca78a97b09f656de7c03f9934f921c125fc0318dab7466e29951c1e51ae
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
