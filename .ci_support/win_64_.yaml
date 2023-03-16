@@ -3,7 +3,7 @@ aws_c_common:
 aws_c_event_stream:
 - 0.2.20
 aws_crt_cpp:
-- 0.19.7
+- 0.19.8
 c_compiler:
 - vs2019
 channel_sources:
