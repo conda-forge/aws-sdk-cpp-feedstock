@@ -1,4 +1,4 @@
-{% set version = "1.11.48" %}
+{% set version = "1.11.49" %}
 
 package:
   name: aws-sdk-cpp
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/aws/aws-sdk-cpp/archive/{{ version }}.tar.gz
-  sha256: 5aedeba3108e24abe5bb00079ecfe9286c8441b604b0ad75fd0cbe3ff4a98308
+  sha256: 978b466f2dba7944738d1ca80ca23b9bdd719b5972b9c492ffeb05f4fb803096
   patches:
     - patches/0001-do-not-set-WX-equivalent-to-Werror-on-windows.patch
 
