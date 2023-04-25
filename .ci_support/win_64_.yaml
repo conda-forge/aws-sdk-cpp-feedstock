@@ -3,7 +3,7 @@ aws_c_common:
 aws_c_event_stream:
 - 0.2.20
 aws_crt_cpp:
-- 0.19.8
+- 0.19.9
 c_compiler:
 - vs2019
 channel_sources:
@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libcurl:
-- '7'
+- '8'
 openssl:
 - '3'
 target_platform:
