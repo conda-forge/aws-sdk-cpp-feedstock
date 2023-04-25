@@ -7,11 +7,11 @@ aws_c_common:
 aws_c_event_stream:
 - 0.2.20
 aws_crt_cpp:
-- 0.19.8
+- 0.19.9
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -19,9 +19,9 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 libcurl:
-- '7'
+- '8'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 openssl:
