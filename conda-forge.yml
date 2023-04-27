@@ -3,8 +3,6 @@ bot:
   - v1.10.x
   automerge: true
   version_updates:
-    # due to high volume of abi-relevant version upgrades, only
-    # update for about 1 in 10 new versions, at random (see #662)
     random_fraction_to_keep: 0.1
 build_platform:
   linux_aarch64: linux_64
