@@ -12,9 +12,10 @@ source:
     # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
     - 0001-fix-libdir-for-deps.patch
     - 0002-force-openssl-use.patch  # [unix]
+    - 0003-Fix-AWSSDKConfig.cmake.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -29,13 +30,15 @@ requirements:
     - m2-patch  # [win]
 
   host:
-    - aws-c-common
-    - aws-c-event-stream
-    - libcurl
+    - aws-c-common 0.6.8
+    - aws-c-event-stream 0.1.6
+    - libcurl 7.88.1
     # Force all platforms except win to use OpenSSL, rather than OS-supplied APIs.
     # Note that OpenSSL is implictly pulled in as a libcurl dependency, but we
     # explicitly list it as a host requirement so our run_exports are correct.
-    - openssl  # [unix]
+    - openssl {{ openssl }}  # [unix]
+  run:
+    - openssl 3.*
 
 test:
   files:
@@ -59,7 +62,7 @@ about:
     The AWS SDK for C++ provides a modern C++ (version C++ 11 or later) interface for Amazon Web Services (AWS).
     It is meant to be performant and fully functioning with low- and high-level SDKs,
     while minimizing dependencies and providing platform portability (Windows, OSX, Linux, and mobile).
-  doc_url: https://aws.amazon.com/documentation/sdk-for-cpp/
+  doc_url: https://docs.aws.amazon.com/sdk-for-cpp
   dev_url: https://github.com/aws/aws-sdk-cpp
 
 extra:
