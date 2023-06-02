@@ -19,6 +19,8 @@ build:
   number: 1
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
+  missing_dso_whitelist:
+   - '$RPATH/ld64.so.1'  # [s390x]
 
 requirements:
   build:
