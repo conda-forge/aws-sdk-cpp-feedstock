@@ -13,6 +13,7 @@ source:
     - 0001-fix-libdir-for-deps.patch
     - 0002-force-openssl-use.patch  # [unix]
     - 0003-Fix-AWSSDKConfig.cmake.patch
+    - 0004-demote-compilation-errors.patch
 
 build:
   number: 1
