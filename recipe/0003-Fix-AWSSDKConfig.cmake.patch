@@ -1,0 +1,25 @@
+From 78f884f6defbd21baa367dce05cce7c994764b5a Mon Sep 17 00:00:00 2001
+From: Jean-Christophe Morin <jcmorin@anaconda.com>
+Date: Thu, 1 Jun 2023 18:49:41 -0400
+Subject: [PATCH] Fix AWSSDKConfig.cmake
+
+---
+ cmake/AWSSDKConfig.cmake | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmake/AWSSDKConfig.cmake b/cmake/AWSSDKConfig.cmake
+index c2f643e6aa..adfa424fbc 100644
+--- a/cmake/AWSSDKConfig.cmake
++++ b/cmake/AWSSDKConfig.cmake
+@@ -116,7 +116,7 @@ endif()
+ get_filename_component(TEMP_PATH "${AWSSDK_CORE_LIB_FILE}" PATH)
+ get_filename_component(TEMP_NAME "${TEMP_PATH}" NAME)
+ 
+-while (NOT TEMP_NAME STREQUAL ${LIB_SEARCH_PREFIX})
++while (NOT TEMP_NAME STREQUAL "${LIB_SEARCH_PREFIX}")
+     set(TEMP_PLATFORM_PREFIX "${TEMP_NAME}/${TEMP_PLATFORM_PREFIX}")
+     get_filename_component(TEMP_PATH "${TEMP_PATH}" PATH)
+     get_filename_component(TEMP_NAME "${TEMP_PATH}" NAME)
+-- 
+2.40.1
+
