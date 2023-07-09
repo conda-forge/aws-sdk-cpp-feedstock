@@ -11,7 +11,7 @@ source:
     - patches/0001-do-not-set-WX-equivalent-to-Werror-on-windows.patch
 
 build:
-  number: 8
+  number: 9
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
