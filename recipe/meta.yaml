@@ -7,8 +7,6 @@ package:
 source:
   url: https://github.com/aws/aws-sdk-cpp/archive/{{ version }}.tar.gz
   sha256: ff869c1cfa1e5f980881b4b495e5bde9e019b06ad38336001ab0d69c3ffe0386
-  patches:
-    - patches/0001-do-not-set-WX-equivalent-to-Werror-on-windows.patch
 
 build:
   number: 0
