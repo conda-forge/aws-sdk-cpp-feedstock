@@ -1,7 +1,6 @@
 bot:
   abi_migration_branches:
   - v1.10.x
-  automerge: true
   version_updates:
     random_fraction_to_keep: 0.1
     sources:
