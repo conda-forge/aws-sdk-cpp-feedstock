@@ -21,6 +21,9 @@ requirements:
     - ninja
     - make  # [unix]
   host:
+    - aws-c-common
+    - aws-c-event-stream
+    - aws-checksums
     - aws-crt-cpp
     - libcurl  # [not win]
     - openssl  # [not win]
