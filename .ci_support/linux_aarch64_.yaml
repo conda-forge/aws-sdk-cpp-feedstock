@@ -7,7 +7,7 @@ aws_c_event_stream:
 aws_checksums:
 - 0.1.17
 aws_crt_cpp:
-- 0.24.4
+- 0.24.5
 c_compiler:
 - gcc
 c_compiler_version:
