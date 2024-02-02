@@ -1,5 +1,5 @@
 {% set name = "aws-sdk-cpp" %}
-{% set version = "1.8.185" %}
+{% set version = "1.10.55" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,10 @@ package:
 
 source:
   url: https://github.com/aws/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 6fc110579098268700fac428cebe2fcda14f4e389ee5194bad5cae52b5445e6b
-  patches:
-    # Pass CMAKE_INSTALL_LIBDIR to dependencies as well
-    - 0001-fix-libdir-for-deps.patch
-    - 0002-force-openssl-use.patch  # [unix]
-    - 0003-Fix-AWSSDKConfig.cmake.patch
-    - 0004-demote-compilation-errors.patch
+  sha256: 2d552fb1a84bef4a9b65e34aa7031851ed2aef5319e02cc6e4cb735c48aa30de
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
   missing_dso_whitelist:
@@ -27,21 +21,16 @@ requirements:
     - cmake >=3.2
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - ninja
+    - ninja-base
     - make  # [unix]
-    - patch     # [not win]
-    - m2-patch  # [win]
 
   host:
-    - aws-c-common 0.6.8
-    - aws-c-event-stream 0.1.6
+    - aws-c-common 0.8.5
+    - aws-c-event-stream 0.2.15
+    - aws-crt-cpp 0.18.16
+    - aws-checksums 0.1.13
     - libcurl 7.88.1
-    # Force all platforms except win to use OpenSSL, rather than OS-supplied APIs.
-    # Note that OpenSSL is implictly pulled in as a libcurl dependency, but we
-    # explicitly list it as a host requirement so our run_exports are correct.
-    - openssl {{ openssl }}  # [unix]
-  run:
-    - openssl 3.*
+    - openssl {{ openssl }}  # [linux]
 
 test:
   files:

@@ -6,6 +6,7 @@ pushd "%SRC_DIR%"\build
 cmake -LAH -G "Ninja" ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
+      -DCMAKE_MODULE_PATH:PATH="%LIBRARY_LIB%\cmake" ^
       -DBUILD_ONLY="s3;core;transfer;config;identity-management;sts" ^
       -DENABLE_UNITY_BUILD=on ^
       -DENABLE_TESTING=OFF ^
