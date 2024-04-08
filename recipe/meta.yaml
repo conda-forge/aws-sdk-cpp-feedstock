@@ -9,7 +9,7 @@ source:
   sha256: 89b7b2fc921e4c5a35785f3bcf0f7dbf76ad488d85c9888043ed7b8e5029f25d
 
 build:
-  number: 4
+  number: 5
   run_exports:
     - {{ pin_subpackage("aws-sdk-cpp", max_pin="x.x.x") }}
 
@@ -17,6 +17,7 @@ requirements:
   build:
     - cmake >=3.2
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - ninja
     - make  # [unix]
