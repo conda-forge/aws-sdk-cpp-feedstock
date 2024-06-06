@@ -7,7 +7,7 @@ aws_c_event_stream:
 aws_checksums:
 - 0.1.18
 aws_crt_cpp:
-- 0.26.9
+- 0.26.10
 c_compiler:
 - gcc
 c_compiler_version:
@@ -42,4 +42,4 @@ zip_keys:
 - - c_stdlib_version
   - cdt_name
 zlib:
-- '1.2'
+- '1'
