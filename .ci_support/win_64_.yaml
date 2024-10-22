@@ -5,7 +5,7 @@ aws_c_event_stream:
 aws_checksums:
 - 0.1.20
 aws_crt_cpp:
-- 0.28.3
+- 0.28.5
 c_compiler:
 - vs2019
 c_stdlib:
