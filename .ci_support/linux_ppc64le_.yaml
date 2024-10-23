@@ -1,5 +1,5 @@
 aws_c_common:
-- 0.9.30
+- 0.9.31
 aws_c_event_stream:
 - 0.4.3
 aws_checksums:
