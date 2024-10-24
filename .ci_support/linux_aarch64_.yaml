@@ -3,7 +3,7 @@ BUILD:
 aws_c_common:
 - 0.9.31
 aws_c_event_stream:
-- 0.4.3
+- 0.5.0
 aws_checksums:
 - 0.1.20
 aws_crt_cpp:
