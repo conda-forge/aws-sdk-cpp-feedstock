@@ -9,11 +9,11 @@ aws_c_event_stream:
 aws_checksums:
 - 0.2.0
 aws_crt_cpp:
-- 0.29.0
+- 0.29.1
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -25,7 +25,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '17'
+- '18'
 libcurl:
 - '8'
 macos_machine:
