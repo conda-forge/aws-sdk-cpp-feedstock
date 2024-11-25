@@ -17,4 +17,4 @@ cmake ${CMAKE_ARGS} .. -GNinja \
   -DCURL_HAS_H2=ON \
   -DCURL_HAS_TLS_PROXY=ON \
 
-ninja install
+ninja install -j${CPU_COUNT}
