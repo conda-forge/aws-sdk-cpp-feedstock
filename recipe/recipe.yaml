@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.11.489
+  version: 1.11.510
 
 package:
   name: aws-sdk-cpp
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/aws/aws-sdk-cpp/archive/${{ version }}.tar.gz
-  sha256: 89ce525c735243a043c5a31eee5dc082fc976b9b5a4b0b66813eed48c97abbfa
+  sha256: 0a0e591ccd6f5df5769f436fc087414aa3fb646b727a8e7a121a1b3a5c5af1ae
 
 build:
   number: 1
@@ -26,12 +26,9 @@ requirements:
   host:
     - aws-c-common
     - aws-c-event-stream
-    - aws-checksums
     - aws-crt-cpp
     - if: not win
       then: libcurl
-    - if: not win
-      then: openssl
     - zlib
   run_exports:
     - ${{ pin_subpackage("aws-sdk-cpp", upper_bound="x.x.x") }}
@@ -41,6 +38,7 @@ tests:
       recipe:
         - test.cpp
         - CMakeLists.txt
+    script: run_test
     requirements:
       run:
         - cmake
@@ -49,7 +47,6 @@ tests:
         - ninja
         - if: unix
           then: make
-    script: commands
 
 about:
   license: Apache-2.0
