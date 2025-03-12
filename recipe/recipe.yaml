@@ -38,7 +38,8 @@ tests:
       recipe:
         - test.cpp
         - CMakeLists.txt
-    script: run_test
+        - run_test${{ ".bat" if win else ".sh" }}
+    script: ./run_test${{ ".bat" if win else ".sh" }}
     requirements:
       run:
         - cmake
