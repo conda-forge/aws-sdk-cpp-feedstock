@@ -17,7 +17,6 @@ The AWS SDK for C++ provides a modern C++ (version C++ 11 or later) interface fo
 It is meant to be performant and fully functioning with low- and high-level SDKs,
 while minimizing dependencies and providing platform portability (Windows, OSX, Linux, and mobile).
 
-
 Current build status
 ====================
 
