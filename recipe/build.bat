@@ -7,6 +7,7 @@ pushd "%SRC_DIR%"\build
 set "LIBRARY_PREFIX_M=%LIBRARY_PREFIX:\=/%"
 
 cmake -LAH -G "Ninja" ^
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ^
       -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
       -DCMAKE_MODULE_PATH="%LIBRARY_PREFIX_M%/lib/cmake" ^
       -DCMAKE_INSTALL_LIBDIR=lib ^

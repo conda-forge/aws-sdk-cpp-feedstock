@@ -12,11 +12,11 @@ source:
   sha256: 0a0e591ccd6f5df5769f436fc087414aa3fb646b727a8e7a121a1b3a5c5af1ae
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
-    - cmake >=3.2
+    - cmake >=3.5
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - ${{ compiler('cxx') }}
@@ -42,7 +42,7 @@ tests:
     script: ./run_test${{ ".bat" if win else ".sh" }}
     requirements:
       run:
-        - cmake
+        - cmake >=3.5
         - ${{ compiler('c') }}
         - ${{ compiler('cxx') }}
         - ninja

@@ -9,6 +9,7 @@ grep -v Werror cmake/compiler_settings.cmake.orig > cmake/compiler_settings.cmak
 mkdir build && cd build
 
 cmake ${CMAKE_ARGS} .. -GNinja \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DCMAKE_MODULE_PATH="${PREFIX}/lib/cmake" \
