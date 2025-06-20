@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.11.510
+  version: "1.11.592"
 
 package:
   name: aws-sdk-cpp
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/aws/aws-sdk-cpp/archive/${{ version }}.tar.gz
-  sha256: 0a0e591ccd6f5df5769f436fc087414aa3fb646b727a8e7a121a1b3a5c5af1ae
+  sha256: 274fb569fec2eac652d3949b0e4f2a58f522686198b12f5d3cd62e4b2ea9824b
 
 build:
-  number: 10
+  number: 0
 
 requirements:
   build:
