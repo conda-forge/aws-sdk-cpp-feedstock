@@ -12,7 +12,7 @@ cmake -LAH -G "Ninja" ^
       -DCMAKE_MODULE_PATH="%LIBRARY_PREFIX_M%/lib/cmake" ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
       -DAWS_SDK_WARNINGS_ARE_ERRORS=OFF ^
-      -DBUILD_ONLY="s3;core;transfer;config;identity-management;sts;sqs;sns;monitoring;logs" ^
+      -DBUILD_ONLY="s3;s3vectors;core;transfer;config;identity-management;sts;sqs;sns;monitoring;logs" ^
       -DENABLE_UNITY_BUILD=on ^
       -DENABLE_TESTING=OFF ^
       -DCMAKE_BUILD_TYPE=Release ^
