@@ -1,7 +1,7 @@
 aws_c_common:
-- 0.12.6
+- 0.13.1
 aws_c_event_stream:
-- 0.7.0
+- 0.7.1
 aws_crt_cpp:
 - 0.38.3
 c_compiler:
