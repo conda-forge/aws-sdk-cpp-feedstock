@@ -12,7 +12,7 @@ source:
   sha256: 673325c6400258fafbed120144b1673a74193d85110671358a0c69ad56994c57
 
 build:
-  number: 9
+  number: 10
 
 requirements:
   build:
@@ -48,6 +48,23 @@ tests:
         - ninja
         - if: unix
           then: make
+
+  - if: win and arm64
+    then:
+      requirements:
+        run:
+          - ${{ compiler('cxx') }}
+          - cmake
+      files:
+        recipe:
+          - consumer
+      script:
+        - cmake -S consumer -B consumer-build -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"
+        - cmake --build consumer-build
+        - consumer-build\sdk_consumer.exe
+        - dumpbin /headers consumer-build\sdk_consumer.exe | findstr /I /C:"AA64 machine (ARM64)"
+        - dumpbin /headers "%LIBRARY_BIN%\aws-cpp-sdk-core.dll" | findstr /I /C:"AA64 machine (ARM64)"
+        - dumpbin /headers "%LIBRARY_BIN%\aws-cpp-sdk-s3.dll" | findstr /I /C:"AA64 machine (ARM64)"
 
 about:
   license: Apache-2.0
