@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.20)
-project(sdk_consumer LANGUAGES CXX)
-set(BUILD_SHARED_LIBS ON)
-find_package(AWSSDK REQUIRED COMPONENTS s3 core transfer config identity-management sts sqs sns monitoring logs secretsmanager)
-add_executable(sdk_consumer main.cpp)
-target_compile_features(sdk_consumer PRIVATE cxx_std_17)
-target_link_libraries(sdk_consumer PRIVATE ${AWSSDK_LINK_LIBRARIES})
