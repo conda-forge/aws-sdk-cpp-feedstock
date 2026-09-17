@@ -3,7 +3,7 @@ aws_c_common:
 aws_c_event_stream:
 - 0.7.1
 aws_crt_cpp:
-- 0.43.0
+- 0.43.6
 c_compiler:
 - vs2022
 c_stdlib:
