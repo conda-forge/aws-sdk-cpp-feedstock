@@ -1,9 +1,9 @@
 aws_c_common:
-- 0.14.3
+- 0.14.4
 aws_c_event_stream:
 - 0.7.1
 aws_crt_cpp:
-- 0.42.3
+- 0.43.6
 c_compiler:
 - gcc
 c_compiler_version:
@@ -21,7 +21,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '15'
 docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma10
+- quay.io/condaforge/linux-anvil-aarch64:alma10
 libcurl:
 - '8'
 target_platform:
