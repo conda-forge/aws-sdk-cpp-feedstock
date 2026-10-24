@@ -5,6 +5,7 @@ __migrator:
   migration_number: 1
   exclude_pinned_pkgs: false
   automerge: true
+  use_local: true
 migrator_ts: 1790324704
 aws_c_auth:
   - '1.0'
@@ -28,3 +29,5 @@ aws_c_sdkutils:
   - '1.0'
 aws_checksums:
   - '1.0'
+aws_crt_cpp:
+  - '0.43.8'
